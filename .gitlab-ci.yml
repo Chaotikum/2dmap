@@ -1,0 +1,11 @@
+stages:
+    - deploy
+deploy_site:
+    stage: deploy
+    only:
+        - master
+    script:
+      - rm -rf /home/tvluke/html/hl2d/*
+      - mv * /home/tvluke/html/hl2d/
+      - cd /home/tvluke/hl2d/
+      - restorecon -R hist
