@@ -7,5 +7,5 @@ deploy_site:
     script:
       - rm -rf /home/tvluke/html/hl2d/*
       - mv * /home/tvluke/html/hl2d/
-      - cd /home/tvluke/hl2d/
-      - restorecon -R hist
+      - cd /home/tvluke/html/
+      - restorecon -R hl2d
