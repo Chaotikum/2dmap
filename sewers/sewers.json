@@ -191,6 +191,15 @@
          "tileheight":32,
          "tiles":[
                 {
+                 "id":1206,
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }]
+                }, 
+                {
                  "animation":[
                         {
                          "duration":100,
