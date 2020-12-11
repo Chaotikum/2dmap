@@ -29,7 +29,7 @@
          "opacity":1,
          "properties":[
                 {
-                 "name":"exiturl",
+                 "name":"exitUrl",
                  "type":"string",
                  "value":"sewers\/sewers.json"
                 }],
