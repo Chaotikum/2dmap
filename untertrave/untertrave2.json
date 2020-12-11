@@ -329,7 +329,7 @@
         {
          "draworder":"topdown",
          "id":26,
-         "name":"floorPlan",
+         "name":"FloorLayer",
          "objects":[],
          "opacity":1,
          "type":"objectgroup",
