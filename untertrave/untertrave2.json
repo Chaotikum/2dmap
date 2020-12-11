@@ -12,7 +12,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":"intrave.json"
+                 "value":"..\/intrave.json"
                 }],
          "type":"tilelayer",
          "visible":true,
