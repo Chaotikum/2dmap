@@ -67,7 +67,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":"untertrave\/untertrave.json#leiter"
+                 "value":"untertrave\/untertrave2.json#leiter"
                 }],
          "type":"tilelayer",
          "visible":true,
