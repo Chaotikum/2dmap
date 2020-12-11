@@ -67,7 +67,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":"untertrave.json#leiter"
+                 "value":"untertrave\/untertrave2.json#leiter"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -217,12 +217,12 @@
          "columns":1,
          "firstgid":2313,
          "image":"sourcefiles\/morewater.png",
-         "imageheight":64,
+         "imageheight":96,
          "imagewidth":32,
          "margin":0,
          "name":"morewater",
          "spacing":0,
-         "tilecount":2,
+         "tilecount":3,
          "tileheight":32,
          "tilewidth":32
         }],
