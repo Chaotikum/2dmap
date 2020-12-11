@@ -43,7 +43,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":"untertrave/untertrave2.json#start"
+                 "value":"untertrave\/untertrave2.json#start"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -178,8 +178,277 @@
  "tileheight":32,
  "tilesets":[
         {
+         "columns":32,
          "firstgid":1,
-         "source":"build_atlas.tsx"
+         "image":"sourcefiles\/Atlas2\/build_atlas.png",
+         "imageheight":1024,
+         "imagewidth":1024,
+         "margin":0,
+         "name":"build_atlas",
+         "spacing":0,
+         "tilecount":1024,
+         "tileheight":32,
+         "tiles":[
+                {
+                 "id":167,
+                 "objectgroup":
+                    {
+                     "draworder":"index",
+                     "id":3,
+                     "name":"",
+                     "objects":[
+                            {
+                             "height":0,
+                             "id":2,
+                             "name":"",
+                             "polygon":[
+                                    {
+                                     "x":0,
+                                     "y":0
+                                    },
+                                    {
+                                     "x":2.464,
+                                     "y":-15.9625
+                                    },
+                                    {
+                                     "x":4.92801,
+                                     "y":-25.2828
+                                    },
+                                    {
+                                     "x":9.21323,
+                                     "y":-31.4964
+                                    },
+                                    {
+                                     "x":13.927,
+                                     "y":-31.6035
+                                    },
+                                    {
+                                     "x":17.8908,
+                                     "y":-22.4974
+                                    },
+                                    {
+                                     "x":20.1406,
+                                     "y":-10.6059
+                                    },
+                                    {
+                                     "x":21.319,
+                                     "y":-0.642784
+                                    }],
+                             "rotation":0,
+                             "type":"",
+                             "visible":true,
+                             "width":0,
+                             "x":3.74957,
+                             "y":32.0321
+                            }],
+                     "opacity":1,
+                     "type":"objectgroup",
+                     "visible":true,
+                     "x":0,
+                     "y":0
+                    }
+                },
+                {
+                 "id":199,
+                 "objectgroup":
+                    {
+                     "draworder":"index",
+                     "id":2,
+                     "name":"",
+                     "objects":[
+                            {
+                             "height":0,
+                             "id":1,
+                             "name":"",
+                             "polygon":[
+                                    {
+                                     "x":0,
+                                     "y":0
+                                    },
+                                    {
+                                     "x":-0.107131,
+                                     "y":-8.46332
+                                    },
+                                    {
+                                     "x":-0.964176,
+                                     "y":-8.99897
+                                    },
+                                    {
+                                     "x":-1.07131,
+                                     "y":-12.6414
+                                    },
+                                    {
+                                     "x":-1.92835,
+                                     "y":-12.6414
+                                    },
+                                    {
+                                     "x":-2.03548,
+                                     "y":-27.7468
+                                    },
+                                    {
+                                     "x":-1.28557,
+                                     "y":-27.854
+                                    },
+                                    {
+                                     "x":-1.17844,
+                                     "y":-31.8178
+                                    },
+                                    {
+                                     "x":19.4978,
+                                     "y":-31.7107
+                                    },
+                                    {
+                                     "x":20.2477,
+                                     "y":-30.9607
+                                    },
+                                    {
+                                     "x":21.2119,
+                                     "y":-28.1754
+                                    },
+                                    {
+                                     "x":22.0689,
+                                     "y":-2.57113
+                                    },
+                                    {
+                                     "x":21.1047,
+                                     "y":-2.57113
+                                    },
+                                    {
+                                     "x":21.1047,
+                                     "y":0.107131
+                                    }],
+                             "rotation":0,
+                             "type":"",
+                             "visible":true,
+                             "width":0,
+                             "x":5.03514,
+                             "y":31.8178
+                            }],
+                     "opacity":1,
+                     "type":"objectgroup",
+                     "visible":true,
+                     "x":0,
+                     "y":0
+                    }
+                },
+                {
+                 "id":288,
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":false
+                        }]
+                },
+                {
+                 "id":289,
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":false
+                        }]
+                },
+                {
+                 "id":290,
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":false
+                        }]
+                },
+                {
+                 "id":320,
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":false
+                        }]
+                },
+                {
+                 "id":321,
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":false
+                        }]
+                },
+                {
+                 "id":322,
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":false
+                        }]
+                },
+                {
+                 "id":352,
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":false
+                        }]
+                },
+                {
+                 "id":353,
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":false
+                        }]
+                },
+                {
+                 "id":354,
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":false
+                        }]
+                },
+                {
+                 "id":683,
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }]
+                },
+                {
+                 "id":684,
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }]
+                },
+                {
+                 "id":715,
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }]
+                },
+                {
+                 "id":716,
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }]
+                }],
+         "tilewidth":32
         },
         {
          "columns":56,
@@ -1300,7 +1569,7 @@
         {
          "columns":56,
          "firstgid":3337,
-         "image":"sourcefiles\/Slates v.2 [32x32px orthogonal tileset by Ivan Voirol].png",
+         "image":"sourcefiles\/Slates2.png",
          "imageheight":736,
          "imagewidth":1792,
          "margin":0,
@@ -2401,8 +2670,17 @@
          "tilewidth":32
         },
         {
+         "columns":8,
          "firstgid":4625,
-         "source":"A5.tsx"
+         "image":"main\/A5.png",
+         "imageheight":512,
+         "imagewidth":256,
+         "margin":0,
+         "name":"A5",
+         "spacing":0,
+         "tilecount":128,
+         "tileheight":32,
+         "tilewidth":32
         }],
  "tilewidth":32,
  "type":"map",
