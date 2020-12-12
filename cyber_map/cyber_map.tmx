@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.4" tiledversion="1.4.3" orientation="orthogonal" renderorder="left-down" width="25" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="11" nextobjectid="12">
+<map version="1.4" tiledversion="1.4.3" orientation="orthogonal" renderorder="right-down" width="25" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="11" nextobjectid="12">
  <editorsettings>
   <export target="../../../../../programs/Tiled/cyber_map/cyber_map.json" format="json"/>
  </editorsettings>
