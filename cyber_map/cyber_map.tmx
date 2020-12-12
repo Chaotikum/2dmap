@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.4" tiledversion="1.4.3" orientation="orthogonal" renderorder="right-down" width="25" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="12" nextobjectid="12">
+<map version="1.4" tiledversion="1.4.3" orientation="orthogonal" renderorder="right-down" width="25" height="20" tilewidth="32" tileheight="32" infinite="0" nextlayerid="13" nextobjectid="12">
  <editorsettings>
   <export target="cyber_map.json" format="json"/>
  </editorsettings>
  <tileset firstgid="1" name="kauzz-streets-tilee" tilewidth="32" tileheight="32" tilecount="256" columns="16">
   <image source="../kauzz.itch.io/streets-tilee-v2.png" width="512" height="512"/>
   <tile id="144">
+   <properties>
+    <property name="collides" type="bool" value="true"/>
+   </properties>
    <objectgroup draworder="index" id="3">
     <object id="2" name="collision" x="1.86552" y="1.70357" width="28.2837" height="28.5584" rotation="0.140576"/>
+   </objectgroup>
+  </tile>
+  <tile id="178">
+   <objectgroup draworder="index" id="2">
+    <object id="1" x="1.55606" y="1.28146" width="29.016" height="29.1076"/>
    </objectgroup>
   </tile>
   <tile id="195">
@@ -167,7 +175,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer id="11" name="Collisions" width="25" height="20" opacity="0.5">
+ <layer id="12" name="Collisions" width="25" height="20">
   <data encoding="csv">
 145,145,145,145,145,145,145,145,145,145,145,145,145,145,145,145,145,145,145,145,145,145,145,145,145,
 145,0,0,0,0,0,0,0,0,145,0,0,0,0,0,0,0,0,0,0,0,0,0,0,145,
