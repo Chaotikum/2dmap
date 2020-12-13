@@ -196,7 +196,7 @@
          "height":116,
          "id":7,
          "name":"block",
-         "opacity":0.3,
+         "opacity":0,
          "type":"tilelayer",
          "visible":true,
          "width":116,
