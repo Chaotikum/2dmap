@@ -20,7 +20,7 @@
                 {
                  "name":"playAudio",
                  "type":"string",
-                 "value":"https:\/\/tvluke.de\/hl2d\/untertrave\/merkel.mp3"
+                 "value":"https:\/\/tvluke.de\/hl2d\/cyber_map\/cyber_8_bit.wav"
                 }],
          "type":"tilelayer",
          "visible":true,
