@@ -54,7 +54,7 @@
                 {
                  "name":"exitSceneUrl",
                  "type":"string",
-                 "value":"..\/untertrave\/untertrave.json#tunneloutlow"
+                 "value":"..\/untertrave\/untertrave2.json#tunneloutlow"
                 }],
          "type":"tilelayer",
          "visible":true,
