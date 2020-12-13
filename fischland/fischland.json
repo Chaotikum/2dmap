@@ -28,6 +28,12 @@
          "id":12,
          "name":"door",
          "opacity":1,
+		 "properties":[
+                {
+                 "name":"exitUrl",
+                 "type":"string",
+                 "value":"..\/untertrave\/untertrave2.json#fishlandexit"
+                }],
          "type":"tilelayer",
          "visible":false,
          "width":116,
@@ -204,7 +210,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":"..\/untertrave\/untertrave2.json"
+                 "value":"..\/untertrave\/untertrave2.json#fishlandexit"
                 }],
          "spacing":0,
          "tilecount":1,
