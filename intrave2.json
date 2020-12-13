@@ -65,7 +65,7 @@
          "opacity":1,
          "properties":[
                 {
-                 "name":"exitUrl",
+                 "name":"exitSceneUrl",
                  "type":"string",
                  "value":"untertrave\/untertrave2.json#leiter"
                 }],
@@ -223,6 +223,19 @@
          "name":"morewater",
          "spacing":0,
          "tilecount":3,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "columns":3,
+         "firstgid":2316,
+         "image":"untertrave\/SpaceWand.png",
+         "imageheight":64,
+         "imagewidth":96,
+         "margin":0,
+         "name":"SpaceWand",
+         "spacing":0,
+         "tilecount":6,
          "tileheight":32,
          "tilewidth":32
         }],
