@@ -27,6 +27,12 @@
          "id":15,
          "name":"collision",
          "opacity":0.45,
+         "properties":[
+                {
+                 "name":"collides",
+                 "type":"bool",
+                 "value":true
+                }],
          "type":"tilelayer",
          "visible":true,
          "width":100,
