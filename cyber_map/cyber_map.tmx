@@ -79,7 +79,7 @@
  </tileset>
  <layer id="15" name="Music" width="25" height="20" opacity="0">
   <properties>
-   <property name="playAudio" value="https://tvluke.de/hl2d/cyber_map/cyber_8_bit.wav"/>
+   <property name="playAudio" value="https://tvluke.de/hl2d/cyber_map/cyber_8_bit.mp3"/>
   </properties>
   <data encoding="csv">
 146,146,146,146,146,146,146,146,146,146,146,146,146,146,146,146,146,146,146,146,146,146,146,146,0,
