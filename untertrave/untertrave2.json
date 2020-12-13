@@ -74,6 +74,12 @@
          "id":58,
          "name":"tunneloutlow",
          "opacity":1,
+         "properties":[
+                {
+                 "name":"startLayer",
+                 "type":"bool",
+                 "value":true
+                }],
          "type":"tilelayer",
          "visible":true,
          "width":83,
@@ -104,6 +110,12 @@
          "id":60,
          "name":"tunnelouthigh",
          "opacity":1,
+         "properties":[
+                {
+                 "name":"startLayer",
+                 "type":"bool",
+                 "value":true
+                }],
          "type":"tilelayer",
          "visible":true,
          "width":83,
