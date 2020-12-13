@@ -5,6 +5,15 @@
  </editorsettings>
  <tileset firstgid="1" name="kauzz-streets-tilee" tilewidth="32" tileheight="32" tilecount="256" columns="16">
   <image source="../kauzz.itch.io/streets-tilee-v2.png" width="512" height="512"/>
+  <tile id="72">
+   <animation>
+    <frame tileid="72" duration="100"/>
+    <frame tileid="88" duration="100"/>
+    <frame tileid="72" duration="3000"/>
+    <frame tileid="88" duration="100"/>
+    <frame tileid="72" duration="100"/>
+   </animation>
+  </tile>
   <tile id="121">
    <objectgroup draworder="index" id="2">
     <object id="1" x="12.1739" y="0.2746" width="8.69565" height="31.3043">
@@ -214,7 +223,7 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,270,271,272,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,286,287,288,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,89,0,0,0,0,0,0,0,0,0,0,0,0,0,340,341,342,343,0,0,0,0,
+0,0,0,73,0,0,0,0,0,0,0,0,0,0,0,0,0,340,341,342,343,0,0,0,0,
 0,0,0,105,0,0,0,0,0,0,0,0,0,0,0,0,0,356,357,358,359,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,372,0,0,375,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,149,0,0,0,0,0,0,0,0,0,
