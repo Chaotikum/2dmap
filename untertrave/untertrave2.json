@@ -60,7 +60,12 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":"fischland.json"
+                 "value":"..\/fischland\/fischland.json"
+                },
+				{
+                 "name":"startLayer",
+                 "type":"bool",
+                 "value":true
                 }],
          "startx":16,
          "starty":0,
