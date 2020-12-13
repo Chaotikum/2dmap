@@ -503,7 +503,7 @@
         {
          "columns":16,
          "firstgid":5263,
-         "image":"..\/tilesets\/nurChaotikum\/Modern+ Outer Basic ACE (32x32)\/Tilesets\/A4.png",
+         "image":"Modern+ Outer Basic ACE (32x32)\/Tilesets\/A4.png",
          "imageheight":480,
          "imagewidth":512,
          "margin":0,
@@ -516,7 +516,7 @@
         {
          "columns":16,
          "firstgid":5503,
-         "image":"..\/tilesets\/nurChaotikum\/Modern+ Outer Basic ACE (32x32)\/Tilesets\/Tile3.png",
+         "image":"Modern+ Outer Basic ACE (32x32)\/Tilesets\/Tile3.png",
          "imageheight":512,
          "imagewidth":512,
          "margin":0,
@@ -529,7 +529,7 @@
         {
          "columns":16,
          "firstgid":5759,
-         "image":"..\/tilesets\/nurChaotikum\/Modern+ Outer Basic ACE (32x32)\/Tilesets\/Tile2.png",
+         "image":"Modern+ Outer Basic ACE (32x32)\/Tilesets\/Tile2.png",
          "imageheight":512,
          "imagewidth":512,
          "margin":0,
@@ -542,7 +542,7 @@
         {
          "columns":16,
          "firstgid":6015,
-         "image":"..\/tilesets\/nurChaotikum\/Modern+ Outer Basic ACE (32x32)\/Tilesets\/Tile4.png",
+         "image":"Modern+ Outer Basic ACE (32x32)\/Tilesets\/Tile4.png",
          "imageheight":512,
          "imagewidth":512,
          "margin":0,
@@ -555,7 +555,7 @@
         {
          "columns":16,
          "firstgid":6271,
-         "image":"..\/tilesets\/nurChaotikum\/Modern+ Outer Basic ACE (32x32)\/Tilesets\/Tile1.png",
+         "image":"Modern+ Outer Basic ACE (32x32)\/Tilesets\/Tile1.png",
          "imageheight":512,
          "imagewidth":512,
          "margin":0,
@@ -568,7 +568,7 @@
         {
          "columns":8,
          "firstgid":6527,
-         "image":"..\/tilesets\/Pipoya 1\/[Base]BaseChip_pipo.png",
+         "image":"Pipoya 1\/[Base]BaseChip_pipo.png",
          "imageheight":4256,
          "imagewidth":256,
          "margin":0,
@@ -579,35 +579,9 @@
          "tilewidth":32
         }, 
         {
-         "columns":10,
-         "firstgid":7591,
-         "image":"..\/tilesets\/lpcwinter\/TilesA2.png",
-         "imageheight":192,
-         "imagewidth":320,
-         "margin":0,
-         "name":"TilesA2",
-         "spacing":0,
-         "tilecount":60,
-         "tileheight":32,
-         "tilewidth":32
-        }, 
-        {
-         "columns":8,
-         "firstgid":7651,
-         "image":"..\/tilesets\/town\/tileset_town_multi_v002.png",
-         "imageheight":2240,
-         "imagewidth":256,
-         "margin":0,
-         "name":"tileset_town_multi_v002",
-         "spacing":0,
-         "tilecount":560,
-         "tileheight":32,
-         "tilewidth":32
-        }, 
-        {
          "columns":16,
-         "firstgid":8211,
-         "image":"..\/tilesets\/Castle2\/Castle2.png",
+         "firstgid":7591,
+         "image":"Castle2\/Castle2.png",
          "imageheight":512,
          "imagewidth":512,
          "margin":0,
