@@ -1,11 +1,4 @@
 { "compressionlevel":-1,
- "editorsettings":
-    {
-     "export":
-        {
-         "target":"."
-        }
-    },
  "height":100,
  "infinite":true,
  "layers":[
@@ -3642,24 +3635,69 @@
          "tilewidth":32
         }, 
         {
+         "columns":3,
          "firstgid":7639,
-         "source":"SpaceWand.tsx"
+         "image":"SpaceWand.png",
+         "imageheight":64,
+         "imagewidth":96,
+         "margin":0,
+         "name":"SpaceWand",
+         "spacing":0,
+         "tilecount":6,
+         "tileheight":32,
+         "tilewidth":32
         }, 
         {
+         "columns":1,
          "firstgid":7645,
-         "source":"Chaotikum-Schilder.tsx"
+         "image":"Chaotikum-Schilder.png",
+         "imageheight":64,
+         "imagewidth":32,
+         "margin":0,
+         "name":"Chaotikum-Schilder",
+         "spacing":0,
+         "tilecount":2,
+         "tileheight":32,
+         "tilewidth":32
         }, 
         {
+         "columns":3,
          "firstgid":7647,
-         "source":"Hansehaus2.tsx"
+         "image":"Hansehaus2.png",
+         "imageheight":192,
+         "imagewidth":96,
+         "margin":0,
+         "name":"Hansehaus2",
+         "spacing":0,
+         "tilecount":18,
+         "tileheight":32,
+         "tilewidth":32
         }, 
         {
+         "columns":3,
          "firstgid":7665,
-         "source":"Hansehaus2Gelb.tsx"
+         "image":"Hansehaus2Gelb.png",
+         "imageheight":192,
+         "imagewidth":96,
+         "margin":0,
+         "name":"Hansehaus2Gelb",
+         "spacing":0,
+         "tilecount":18,
+         "tileheight":32,
+         "tilewidth":32
         }, 
         {
+         "columns":10,
          "firstgid":7683,
-         "source":"transparentcircles.tsx"
+         "image":"transparentcircles.png",
+         "imageheight":320,
+         "imagewidth":320,
+         "margin":0,
+         "name":"transparentcircles",
+         "spacing":0,
+         "tilecount":100,
+         "tileheight":32,
+         "tilewidth":32
         }],
  "tilewidth":32,
  "type":"map",
