@@ -108,7 +108,7 @@
                 {
                  "name":"exitSceneUrl",
                  "type":"string",
-                 "value":"..\/untertrave\/untertrave2.json#touthigh"
+                 "value":"..\/untertrave\/untertrave2.json#higho"
                 }],
          "type":"tilelayer",
          "visible":true,
