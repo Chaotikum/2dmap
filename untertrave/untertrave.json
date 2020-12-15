@@ -311,7 +311,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":"..\/sewers2\/sewers.json"
+                 "value":"..\/sewers\/main.json"
                 }],
          "startx":-16,
          "starty":-32,
