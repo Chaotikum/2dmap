@@ -2319,8 +2319,17 @@
          "tilewidth":32
         }, 
         {
+         "columns":34,
          "firstgid":9348,
-         "source":"FabiWinterHanse.tsx"
+         "image":"FabiWinterHanse.png",
+         "imageheight":736,
+         "imagewidth":1088,
+         "margin":0,
+         "name":"FabiWinterHanse",
+         "spacing":0,
+         "tilecount":782,
+         "tileheight":32,
+         "tilewidth":32
         }],
  "tilewidth":32,
  "type":"map",
