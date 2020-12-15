@@ -311,7 +311,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":"..\/sewers\/main.json"
+                 "value":"..\/sewers\/main.json#trapdoor"
                 }],
          "startx":-16,
          "starty":-32,
