@@ -364,16 +364,53 @@
  "tileheight":32,
  "tilesets":[
         {
+         "columns":16,
          "firstgid":1,
-         "source":"Castle2.tsx"
+         "image":"..\/..\/documents-export-2020-12-15\/Castle2\/Castle2.png",
+         "imageheight":512,
+         "imagewidth":512,
+         "margin":0,
+         "name":"Castle2",
+         "spacing":0,
+         "tilecount":256,
+         "tileheight":32,
+         "tilewidth":32
         }, 
         {
+         "columns":32,
          "firstgid":257,
-         "source":"build_atlas.tsx"
+         "image":"..\/..\/documents-export-2020-12-15\/Atlas2\/build_atlas.png",
+         "imageheight":1024,
+         "imagewidth":1024,
+         "margin":0,
+         "name":"build_atlas",
+         "spacing":0,
+         "tilecount":1024,
+         "tileheight":32,
+         "tiles":[
+                {
+                 "id":272,
+                 "properties":[
+                        {
+                         "name":"collides",
+                         "type":"bool",
+                         "value":true
+                        }]
+                }],
+         "tilewidth":32
         }, 
         {
+         "columns":32,
          "firstgid":1281,
-         "source":"obj_misk_atlas.tsx"
+         "image":"..\/..\/documents-export-2020-12-15\/Atlas2\/obj_misk_atlas.png",
+         "imageheight":1024,
+         "imagewidth":1024,
+         "margin":0,
+         "name":"obj_misk_atlas",
+         "spacing":0,
+         "tilecount":1024,
+         "tileheight":32,
+         "tilewidth":32
         }],
  "tilewidth":32,
  "type":"map",
