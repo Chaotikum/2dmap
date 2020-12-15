@@ -9420,10 +9420,6 @@
          "tilewidth":32
         }, 
         {
-         "firstgid":1025,
-         "source":"..\/2dmap\/untertrave\/jumpfish.tsx"
-        }, 
-        {
          "columns":56,
          "firstgid":1025,
          "image":"Slates2.png",
