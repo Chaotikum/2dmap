@@ -67,7 +67,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":"..\/intrave2.json"
+                 "value":"..\/intrave2.json#sewer"
                 }],
          "type":"tilelayer",
          "visible":true,
