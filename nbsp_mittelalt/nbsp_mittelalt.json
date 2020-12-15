@@ -162,15 +162,15 @@
         }, 
         {
          "chunks":[],
-         "height":32,
+         "height":0,
          "id":7,
          "name":"ObjekteUeberPlayer",
          "opacity":1,
-         "startx":-16,
-         "starty":-16,
+         "startx":0,
+         "starty":0,
          "type":"tilelayer",
          "visible":true,
-         "width":16,
+         "width":0,
          "x":0,
          "y":0
         }, 
@@ -366,7 +366,7 @@
         {
          "columns":16,
          "firstgid":1,
-         "image":"..\/..\/documents-export-2020-12-15\/Castle2\/Castle2.png",
+         "image":"Castle2.png",
          "imageheight":512,
          "imagewidth":512,
          "margin":0,
@@ -379,7 +379,7 @@
         {
          "columns":32,
          "firstgid":257,
-         "image":"..\/..\/documents-export-2020-12-15\/Atlas2\/build_atlas.png",
+         "image":"build_atlas.png",
          "imageheight":1024,
          "imagewidth":1024,
          "margin":0,
@@ -402,7 +402,7 @@
         {
          "columns":32,
          "firstgid":1281,
-         "image":"..\/..\/documents-export-2020-12-15\/Atlas2\/obj_misk_atlas.png",
+         "image":"obj_misk_atlas.png",
          "imageheight":1024,
          "imagewidth":1024,
          "margin":0,
