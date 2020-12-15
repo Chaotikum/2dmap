@@ -31,7 +31,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":"sewers\/sewers.json"
+                 "value":"sewers\/main.json"
                 }],
          "type":"tilelayer",
          "visible":true,
