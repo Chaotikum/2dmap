@@ -65,7 +65,7 @@
          "opacity":0,
          "properties":[
                 {
-                 "name":"exitUrl",
+                 "name":"exitScene",
                  "type":"string",
                  "value":"..\/intrave2.json#sewer"
                 }],
