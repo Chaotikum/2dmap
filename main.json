@@ -33,12 +33,6 @@
          "id":14,
          "name":"exit_to_nbsp",
          "opacity":0,
-         "properties":[
-                {
-                 "name":"exitUrl",
-                 "type":"string",
-                 "value":"nbsp\/main.json#start"
-                }],
          "type":"tilelayer",
          "visible":true,
          "width":15,
