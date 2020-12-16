@@ -595,7 +595,7 @@
          "height":51,
          "id":9,
          "name":"collision",
-         "opacity":0.37,
+         "opacity":0,
          "type":"tilelayer",
          "visible":true,
          "width":96,
@@ -648,7 +648,7 @@
  "nextobjectid":1,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"2020.11.25",
+ "tiledversion":"1.4.3",
  "tileheight":32,
  "tilesets":[
         {
