@@ -67,7 +67,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":"luebeck\/innenstadt.json"
+                 "value":"\/luebeck\/innenstadt.json"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -1629,8 +1629,17 @@
          "tilewidth":32
         }, 
         {
+         "columns":34,
          "firstgid":3465,
-         "source":"main\/FabiWinterHanse.tsx"
+         "image":"main\/FabiWinterHanse.png",
+         "imageheight":736,
+         "imagewidth":1088,
+         "margin":0,
+         "name":"FabiWinterHanse",
+         "spacing":0,
+         "tilecount":782,
+         "tileheight":32,
+         "tilewidth":32
         }],
  "tilewidth":32,
  "type":"map",
