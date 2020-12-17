@@ -43,6 +43,8 @@ class Tileset:
     self.lastgid = self.firstgid + data['tilecount'] - 1
     assert data['tilewidth'] == TILE_SIZE
     assert data['tileheight'] == TILE_SIZE
+    assert data['margin'] == 0
+    assert data['spacing'] == 0
 
   def tile_image(self, id):
     offset = id - self.data['firstgid']
@@ -93,7 +95,6 @@ for gid in tile_map:
       tile_data['id'] = new_gid - 1
       tiles_data.append(tile_data)
   tile = tileset.tile_image(gid)
-  tile.save(os.path.join(args.output, f"{gid}.png"))
   box = to_box(new_gid - 1, (im_width, im_height))
   im.paste(tile, box)
 im.save(os.path.join(args.output, 'map.png'))
