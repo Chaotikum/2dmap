@@ -738,21 +738,7 @@
          "tileheight":32,
          "tilewidth":32,
          "transparentcolor":"#ffffff"
-        }, 
-        {
-         "columns":16,
-         "firstgid":3655,
-         "image":"tiles\/Modern_Office\/Office_walls_floors_32x32.png",
-         "imageheight":384,
-         "imagewidth":512,
-         "margin":0,
-         "name":"Office_walls_floors_32x32",
-         "spacing":0,
-         "tilecount":192,
-         "tileheight":32,
-         "tilewidth":32,
-         "transparentcolor":"#ffffff"
-        }, 
+        },
         {
          "columns":22,
          "firstgid":3847,
