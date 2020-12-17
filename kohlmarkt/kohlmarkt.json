@@ -4,7 +4,7 @@
      "export":
         {
          "format":"json",
-         "target":"kohlmarkt..json"
+         "target":"kohlmarkt.json"
         }
     },
  "height":28,
@@ -65,6 +65,29 @@
          "type":"tilelayer",
          "visible":true,
          "width":48,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "chunks":[
+                {
+                 "data":"KLUv\/WAAA60AACAAABgFBQB9oKAPIYWAA3Yw3lEBLA==",
+                 "height":16,
+                 "width":16,
+                 "x":16,
+                 "y":16
+                }],
+         "compression":"zstd",
+         "encoding":"base64",
+         "height":16,
+         "id":11,
+         "name":"start",
+         "opacity":1,
+         "startx":16,
+         "starty":16,
+         "type":"tilelayer",
+         "visible":true,
+         "width":16,
          "x":0,
          "y":0
         }, 
@@ -403,7 +426,7 @@
          "x":0,
          "y":0
         }],
- "nextlayerid":11,
+ "nextlayerid":12,
  "nextobjectid":1,
  "orientation":"orthogonal",
  "renderorder":"right-down",
