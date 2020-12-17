@@ -24,6 +24,9 @@ def save(file, data):
 
 data = load(args.input)
 input_path = os.path.dirname(args.input)
+output_png_relative = os.path.splitext(os.path.basename(args.input))[0] + ".png"
+output_png = os.path.join(args.output, output_png_relative)
+output_json = os.path.join(args.output, os.path.basename(args.input))
 pathlib.Path(args.output).mkdir(parents=True, exist_ok=True)
 
 def to_box(offset, imagedimensions):
@@ -97,7 +100,7 @@ for gid in tile_map:
   tile = tileset.tile_image(gid)
   box = to_box(new_gid - 1, (im_width, im_height))
   im.paste(tile, box)
-im.save(os.path.join(args.output, 'map.png'))
+im.save(output_png)
 
 for layer in data['layers']:
   if layer['type'] == 'tilelayer':
@@ -106,7 +109,7 @@ for layer in data['layers']:
 data['tilesets'] = [{
   "columns": 56,
   "firstgid": 1,
-  "image": "map.png",
+  "image": output_png_relative,
   "imageheight": im_height,
   "imagewidth": im_width,
   "margin": 0,
@@ -118,4 +121,4 @@ data['tilesets'] = [{
   "tiles": tiles_data
 }]
 
-save(os.path.join(args.output, os.path.basename(args.input)), data)
+save(output_json, data)
