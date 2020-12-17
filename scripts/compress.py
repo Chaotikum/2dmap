@@ -8,7 +8,11 @@ args = parser.parse_args()
 import json
 import os
 import pathlib
+import math
 from PIL import Image
+
+TILE_SIZE = 32
+OUTPUT_COLUMNS = 10
 
 def load(file):
   with open(file) as f:
@@ -20,15 +24,17 @@ def save(file, data):
 
 data = load(args.input)
 input_path = os.path.dirname(args.input)
+output_png_relative = os.path.splitext(os.path.basename(args.input))[0] + ".png"
+output_png = os.path.join(args.output, output_png_relative)
+output_json = os.path.join(args.output, os.path.basename(args.input))
 pathlib.Path(args.output).mkdir(parents=True, exist_ok=True)
 
-def to_box(offset, imagedimensions, tiledimensions):
+def to_box(offset, imagedimensions):
   (width, height) = imagedimensions
-  (tw, th) = tiledimensions
-  tiles_per_row = width // tw
+  tiles_per_row = width // TILE_SIZE
   x = offset % tiles_per_row
   y = offset // tiles_per_row
-  return (x * tw, y * th, x * tw + tw, y * th + th)
+  return (x * TILE_SIZE, y * TILE_SIZE, (x+1) * TILE_SIZE, (y+1) * TILE_SIZE)
 
 class Tileset:
   def __init__(self, data):
@@ -37,11 +43,15 @@ class Tileset:
     self.output_filename = os.path.join(args.output, data['image'])
     self.image = Image.open(self.input_filename)
     self.firstgid = data['firstgid']
-    self.lastgid = self.firstgid + data['tilecount']
+    self.lastgid = self.firstgid + data['tilecount'] - 1
+    assert data['tilewidth'] == TILE_SIZE
+    assert data['tileheight'] == TILE_SIZE
+    assert data['margin'] == 0
+    assert data['spacing'] == 0
 
   def tile_image(self, id):
     offset = id - self.data['firstgid']
-    box = to_box(offset, (self.data['imagewidth'], self.data['imageheight']), (self.data['tilewidth'], self.data['tileheight']))
+    box = to_box(offset, (self.data['imagewidth'], self.data['imageheight']))
     return self.image.crop(box)
 
 
@@ -58,24 +68,57 @@ def get_tileset(gid):
       return tileset
   return None
 
+def find_tile(tiles, id):
+  for tile in tiles:
+    if tile['id'] == id:
+      return tile
+  return None
+
 tile_map = {}
+tiles_data = []
 
 for layer in data['layers']:
   if layer['type'] == 'tilelayer':
     for id in layer['data']:
       if id > 0:
-        tile_map[id] = 0
+        tile_map[id] = {}
 
-im = Image.new('RGBA', (320,320))
+im_width = OUTPUT_COLUMNS * TILE_SIZE
+im_height = math.ceil(len(tile_map) / OUTPUT_COLUMNS) * TILE_SIZE
+im = Image.new('RGBA', (im_width, im_height))
 new_gid = 0
 for gid in tile_map:
-  print(gid)
   new_gid += 1
   tile_map[gid] = new_gid
   tileset = get_tileset(gid)
+  id = gid - tileset.firstgid
+  if 'tiles' in tileset.data:
+    tile_data = find_tile(tileset.data['tiles'], id)
+    if tile_data:
+      tile_data['id'] = new_gid - 1
+      tiles_data.append(tile_data)
   tile = tileset.tile_image(gid)
-  tile.save(os.path.join(args.output, f"{gid}.png"))
-  im.paste(tile, to_box(new_gid - 1, (320,320), (32,32)))
-im.save(os.path.join(args.output, 'map.png'))
+  box = to_box(new_gid - 1, (im_width, im_height))
+  im.paste(tile, box)
+im.save(output_png)
 
-save(os.path.join(args.output, os.path.basename(args.input)), data)
+for layer in data['layers']:
+  if layer['type'] == 'tilelayer':
+    layer['data'] = [tile_map[id] if id > 0 else 0 for id in layer['data']]
+
+data['tilesets'] = [{
+  "columns": 56,
+  "firstgid": 1,
+  "image": output_png_relative,
+  "imageheight": im_height,
+  "imagewidth": im_width,
+  "margin": 0,
+  "name": "map",
+  "spacing": 0,
+  "tilecount": len(tile_map),
+  "tileheight": TILE_SIZE,
+  "tilewidth": TILE_SIZE,
+  "tiles": tiles_data
+}]
+
+save(output_json, data)
