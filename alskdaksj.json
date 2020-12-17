@@ -22,8 +22,62 @@
  "tileheight":32,
  "tilesets":[
         {
+         "columns":56,
          "firstgid":1,
-         "source":"Slates2.tsx"
+         "image":"main\/Slates2.png",
+         "imageheight":736,
+         "imagewidth":1792,
+         "margin":0,
+         "name":"Slates2",
+         "spacing":0,
+         "tilecount":1288,
+         "tileheight":32,
+         "tiles":[
+                {
+                 "animation":[
+                        {
+                         "duration":100,
+                         "tileid":456
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":512
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":568
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":569
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":513
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":457
+                        }],
+                 "id":714
+                }, 
+                {
+                 "animation":[
+                        {
+                         "duration":100,
+                         "tileid":1212
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":1213
+                        }, 
+                        {
+                         "duration":100,
+                         "tileid":1214
+                        }],
+                 "id":1212
+                }],
+         "tilewidth":32
         }],
  "tilewidth":32,
  "type":"map",
