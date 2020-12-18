@@ -1,6 +1,6 @@
 import argparse
 
-parser = argparse.ArgumentParser(description='Compress tilesets.')
+parser = argparse.ArgumentParser(description='Combine all used tilesets into one large tileset containing only the actually used tiles.')
 parser.add_argument('input', type=str, help='input JSON file')
 parser.add_argument('output', type=str, help='output directory')
 args = parser.parse_args()
@@ -24,7 +24,8 @@ def save(file, data):
 
 data = load(args.input)
 input_path = os.path.dirname(args.input)
-output_png_relative = os.path.splitext(os.path.basename(args.input))[0] + ".png"
+output_basename = os.path.splitext(os.path.basename(args.input))[0]
+output_png_relative = output_basename + ".png"
 output_png = os.path.join(args.output, output_png_relative)
 output_json = os.path.join(args.output, os.path.basename(args.input))
 pathlib.Path(args.output).mkdir(parents=True, exist_ok=True)
@@ -49,8 +50,8 @@ class Tileset:
     assert data['margin'] == 0
     assert data['spacing'] == 0
 
-  def tile_image(self, id):
-    offset = id - self.data['firstgid']
+  def tile_image(self, gid):
+    offset = gid - self.data['firstgid']
     box = to_box(offset, (self.data['imagewidth'], self.data['imageheight']))
     return self.image.crop(box)
 
@@ -74,37 +75,61 @@ def find_tile(tiles, id):
       return tile
   return None
 
-tile_map = {}
-tiles_data = []
-
+used_tiles = set()
 for layer in data['layers']:
   if layer['type'] == 'tilelayer':
-    for id in layer['data']:
-      if id > 0:
-        tile_map[id] = {}
+    for gid in layer['data']:
+      if gid > 0:
+        used_tiles.add(gid)
 
-im_width = OUTPUT_COLUMNS * TILE_SIZE
-im_height = math.ceil(len(tile_map) / OUTPUT_COLUMNS) * TILE_SIZE
-im = Image.new('RGBA', (im_width, im_height))
-new_gid = 0
-for gid in tile_map:
-  new_gid += 1
-  tile_map[gid] = new_gid
+# maps old gids to new gids
+tile_map = {}
+# collects updated tiles data
+tiles_data = []
+
+def add_tile(gid):
+  assert gid not in tile_map
+  add_tile.new_gid += 1
+  tile_map[gid] = add_tile.new_gid
   tileset = get_tileset(gid)
   id = gid - tileset.firstgid
   if 'tiles' in tileset.data:
     tile_data = find_tile(tileset.data['tiles'], id)
     if tile_data:
-      tile_data['id'] = new_gid - 1
+      tile_data['id'] = add_tile.new_gid - 1
       tiles_data.append(tile_data)
-  tile = tileset.tile_image(gid)
-  box = to_box(new_gid - 1, (im_width, im_height))
-  im.paste(tile, box)
-im.save(output_png)
+add_tile.new_gid = 0
+
+for gid in used_tiles:
+  add_tile(gid)
+
+inv_tile_map = {v: k for k, v in tile_map.items()}
 
 for layer in data['layers']:
   if layer['type'] == 'tilelayer':
     layer['data'] = [tile_map[id] if id > 0 else 0 for id in layer['data']]
+
+for tile in tiles_data.copy():
+  if "animation" in tile:
+    new_gid = tile["id"] + 1
+    old_gid = inv_tile_map[new_gid]
+    tileset = get_tileset(old_gid)
+    for el in tile["animation"]:
+      anim_gid = el["tileid"] + tileset.firstgid
+      if not anim_gid in tile_map:
+        add_tile(anim_gid)
+      el["tileid"] = tile_map[anim_gid] - 1
+
+im_width = OUTPUT_COLUMNS * TILE_SIZE
+im_height = math.ceil(len(tile_map) / OUTPUT_COLUMNS) * TILE_SIZE
+im = Image.new('RGBA', (im_width, im_height))
+
+for gid in tile_map:
+  tileset = get_tileset(gid)
+  tile = tileset.tile_image(gid)
+  box = to_box(tile_map[gid] - 1, (im_width, im_height))
+  im.paste(tile, box)
+im.save(output_png)
 
 data['tilesets'] = [{
   "columns": 56,
@@ -113,7 +138,7 @@ data['tilesets'] = [{
   "imageheight": im_height,
   "imagewidth": im_width,
   "margin": 0,
-  "name": "map",
+  "name": output_basename,
   "spacing": 0,
   "tilecount": len(tile_map),
   "tileheight": TILE_SIZE,
