@@ -235,7 +235,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/www.youtube.com\/channel\/UCj6a320ZLNl5WlH-SSL8alA\/videos"
+                 "value":"https:\/\/chaotikum.org\/"
                 }],
          "type":"tilelayer",
          "visible":true,
