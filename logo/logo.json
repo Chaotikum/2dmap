@@ -57,6 +57,12 @@
          "id":1,
          "name":"logo",
          "opacity":1,
+         "properties":[
+                {
+                 "name":"playAudio",
+                 "type":"string",
+                 "value":"musik.mp3"
+                }],
          "type":"tilelayer",
          "visible":true,
          "width":17,
