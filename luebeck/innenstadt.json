@@ -121,7 +121,7 @@
                 {
                  "name":"playAudio",
                  "type":"string",
-                 "value":"weihnachtsbaum,mp3"
+                 "value":"weihnachtsbaum.mp3"
                 }],
          "type":"tilelayer",
          "visible":true,
