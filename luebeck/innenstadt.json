@@ -193,7 +193,7 @@
                 {
                  "name":"exitSceneUrl",
                  "type":"string",
-                 "value":"..\/nbsp\/main.json"
+                 "value":"..\/nbsp_mittelalt\/nbsp_mittelalt.json"
                 }],
          "type":"tilelayer",
          "visible":true,
