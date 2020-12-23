@@ -71,7 +71,7 @@
          "opacity":0,
          "properties":[
                 {
-                 "name":"exitUrl",
+                 "name":"exitSceneUrl",
                  "type":"string",
                  "value":"..\/fischland\/fischland.json"
                 }],
