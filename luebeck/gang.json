@@ -24,7 +24,7 @@
                 {
                  "name":"exitSceneUrl",
                  "type":"string",
-                 "value":"innenstadt.json\/#fromGang"
+                 "value":"innenstadt.json#fromGang"
                 }],
          "type":"tilelayer",
          "visible":true,
