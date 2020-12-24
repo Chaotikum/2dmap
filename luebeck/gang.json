@@ -56,6 +56,12 @@
          "id":16,
          "name":"mapLink",
          "opacity":1,
+         "properties":[
+                {
+                 "name":"openWebsite",
+                 "type":"string",
+                 "value":"https:\/\/chaotikum.org\/blog\/"
+                }],
          "type":"tilelayer",
          "visible":true,
          "width":9,
