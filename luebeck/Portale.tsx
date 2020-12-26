@@ -8,6 +8,13 @@
    <frame tileid="2" duration="100"/>
   </animation>
  </tile>
+ <tile id="3">
+  <animation>
+   <frame tileid="3" duration="100"/>
+   <frame tileid="4" duration="100"/>
+   <frame tileid="5" duration="100"/>
+  </animation>
+ </tile>
  <tile id="6">
   <animation>
    <frame tileid="6" duration="100"/>
@@ -27,6 +34,13 @@
    <frame tileid="12" duration="100"/>
    <frame tileid="13" duration="100"/>
    <frame tileid="14" duration="100"/>
+  </animation>
+ </tile>
+ <tile id="15">
+  <animation>
+   <frame tileid="15" duration="100"/>
+   <frame tileid="16" duration="100"/>
+   <frame tileid="17" duration="100"/>
   </animation>
  </tile>
 </tileset>
