@@ -1,11 +1,4 @@
 { "compressionlevel":-1,
- "editorsettings":
-    {
-     "export":
-        {
-         "target":"."
-        }
-    },
  "height":118,
  "infinite":false,
  "layers":[
@@ -139,7 +132,7 @@
                 {
                  "name":"exitSceneUrl",
                  "type":"string",
-                 "value":"houseofportals2.json#exitYellow"
+                 "value":"houseofportals.json#exitYellow"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -157,7 +150,7 @@
                 {
                  "name":"exitSceneUrl",
                  "type":"string",
-                 "value":"houseofportals2.json#exitViolet"
+                 "value":"houseofportals.json#exitViolet"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -175,7 +168,7 @@
                 {
                  "name":"exitSceneUrl",
                  "type":"string",
-                 "value":"houseofportals2.json#exitRed"
+                 "value":"houseofportals.json#exitRed"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -193,7 +186,7 @@
                 {
                  "name":"exitSceneUrl",
                  "type":"string",
-                 "value":"houseofportals2.json#exitOrange"
+                 "value":"houseofportals.json#exitOrange"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -211,7 +204,7 @@
                 {
                  "name":"exitSceneUrl",
                  "type":"string",
-                 "value":"houseofportals2.json#exitBlue"
+                 "value":"houseofportals.json#exitBlue"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -229,7 +222,7 @@
                 {
                  "name":"exitSceneUrl",
                  "type":"string",
-                 "value":"houseofportals2.json#exitGreen"
+                 "value":"houseofportals.json#exitGreen"
                 }],
          "type":"tilelayer",
          "visible":true,
