@@ -295,7 +295,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/chaotikum.org\/"
+                 "value":"https:\/\/chaotikum.org\/project\/videosetup\/"
                 }],
          "type":"tilelayer",
          "visible":true,
