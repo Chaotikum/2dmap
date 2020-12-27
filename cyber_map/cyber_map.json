@@ -20,7 +20,7 @@
                 {
                  "name":"playAudio",
                  "type":"string",
-                 "value":"https:\/\/tvluke.de\/hl2d\/cyber_map\/cyber_8_bit.mp3"
+                 "value":"cyber_8_bit.mp3"
                 }],
          "type":"tilelayer",
          "visible":true,
