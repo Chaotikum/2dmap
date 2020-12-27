@@ -47,7 +47,7 @@
          "opacity":1,
          "properties":[
                 {
-                 "name":"exitSceneurl",
+                 "name":"exitSceneUrl",
                  "type":"string",
                  "value":"{<lobby>\/erfas-spaces-north.json#start_moin}"
                 }],
