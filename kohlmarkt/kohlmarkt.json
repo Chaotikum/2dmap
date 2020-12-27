@@ -338,7 +338,7 @@
          "height":28,
          "id":27,
          "name":"WWWblog",
-         "opacity":1,
+         "opacity":0,
          "properties":[
                 {
                  "name":"openWebsite",
