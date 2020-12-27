@@ -103,7 +103,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":"{<af-oio>\/main.json}"
+                 "value":"{<af-oio>\/main.json#start_seawatch}"
                 }],
          "type":"tilelayer",
          "visible":true,
