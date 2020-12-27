@@ -73,7 +73,7 @@
                 {
                  "name":"exitSceneUrl",
                  "type":"string",
-                 "value":"{<lobby>\/erfas-spaces-north.json#start_moin}"
+                 "value":"{<lobby>\/maps\/erfas-spaces-north.json#start_moin}"
                 }],
          "type":"tilelayer",
          "visible":true,
