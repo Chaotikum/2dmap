@@ -38,7 +38,7 @@
                 {
                  "name":"playAudio",
                  "type":"string",
-                 "value":"https:\/\/tvluke.de\/hl2d\/rick\/8_bit_rick.mp3"
+                 "value":"..\/rick\/8_bit_rick.mp3"
                 }],
          "type":"tilelayer",
          "visible":true,
