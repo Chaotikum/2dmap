@@ -65,7 +65,7 @@
          "opacity":1,
          "properties":[
                 {
-                 "name":"extUrl",
+                 "name":"exitUrl",
                  "type":"string",
                  "value":"{<af-oio>\/main.json}"
                 }],
