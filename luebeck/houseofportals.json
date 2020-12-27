@@ -156,7 +156,7 @@
          "opacity":1,
          "properties":[
                 {
-                 "name":"exitUrl",
+                 "name":"exitSceneUrl",
                  "type":"string",
                  "value":"houseofportals2.json#exitViolet"
                 }],
@@ -174,7 +174,7 @@
          "opacity":1,
          "properties":[
                 {
-                 "name":"exitUrl",
+                 "name":"exitSceneUrl",
                  "type":"string",
                  "value":"houseofportals2.json#exitRed"
                 }],
@@ -192,7 +192,7 @@
          "opacity":1,
          "properties":[
                 {
-                 "name":"exitUrl",
+                 "name":"exitSceneUrl",
                  "type":"string",
                  "value":"houseofportals2.json#exitOrange"
                 }],
@@ -210,7 +210,7 @@
          "opacity":1,
          "properties":[
                 {
-                 "name":"exitUrl",
+                 "name":"exitSceneUrl",
                  "type":"string",
                  "value":"houseofportals2.json#exitBlue"
                 }],
@@ -228,7 +228,7 @@
          "opacity":1,
          "properties":[
                 {
-                 "name":"exitUrl",
+                 "name":"exitSceneUrl",
                  "type":"string",
                  "value":"houseofportals2.json#exitGreen"
                 }],
@@ -246,7 +246,7 @@
          "opacity":1,
          "properties":[
                 {
-                 "name":"exitUrl",
+                 "name":"exitSceneUrl",
                  "type":"string",
                  "value":"houseofportals2.json#exitYellow"
                 }],
