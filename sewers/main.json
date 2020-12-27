@@ -67,7 +67,7 @@
                 {
                  "name":"exitSceneUrl",
                  "type":"string",
-                 "value":"..\/intrave2.json#sewer"
+                 "value":"..\/luebeck/trave.json#sewer"
                 }],
          "type":"tilelayer",
          "visible":true,
