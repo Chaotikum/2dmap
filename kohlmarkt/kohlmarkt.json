@@ -308,7 +308,7 @@
          "height":28,
          "id":18,
          "name":"darkness",
-         "opacity":0.66,
+         "opacity":0,
          "type":"tilelayer",
          "visible":true,
          "width":41,
@@ -319,7 +319,7 @@
  "nextobjectid":1,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.4.1",
+ "tiledversion":"1.4.3",
  "tileheight":32,
  "tilesets":[
         {
