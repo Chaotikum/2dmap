@@ -121,7 +121,7 @@
                 {
                  "name":"exitSceneUrl",
                  "type":"string",
-                 "value":"<digitalcourage>\/main.json#enterFromMoin"
+                 "value":"{<digitalcourage>\/main.json#enterFromMoin}"
                 }],
          "type":"tilelayer",
          "visible":true,
