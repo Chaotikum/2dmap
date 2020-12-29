@@ -41,9 +41,9 @@
          "opacity":1,
          "properties":[
                 {
-                 "name":"getBadge",
+                 "name":"openWebsite",
                  "type":"string",
-                 "value":"oCRrPfA8ZOhnjwPet4yp2BDRzWSFcQQlpramCJ6e9qn2ObzBxR"
+                 "value":"https:\/\/tvluke.de\/hl2d\/luebeck\/badge1.html"
                 }],
          "type":"tilelayer",
          "visible":true,
