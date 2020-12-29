@@ -43,7 +43,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/tvluke.de\/hl2d\/luebeck\/badge1.html"
+                 "value":"https:\/\/chaotikum.org\/assets\/badge1.html"
                 }],
          "type":"tilelayer",
          "visible":true,
