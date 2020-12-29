@@ -41,7 +41,7 @@
          "opacity":1,
          "properties":[
                 {
-                 "name":"getBdge",
+                 "name":"getBadge",
                  "type":"string",
                  "value":"oCRrPfA8ZOhnjwPet4yp2BDRzWSFcQQlpramCJ6e9qn2ObzBxR"
                 }],
