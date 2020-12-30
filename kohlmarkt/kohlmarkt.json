@@ -117,8 +117,13 @@
          "height":28,
          "id":29,
          "name":"rick",
-         "opacity":1,
+         "opacity":0,
          "properties":[
+                {
+                 "name":"getBadge",
+                 "type":"string",
+                 "value":"POywxU1bLmLbW9cutTsekveIhsAEyfECs7YytTDKh5AOxcVRmE "
+                }, 
                 {
                  "name":"playAudio",
                  "type":"string",
