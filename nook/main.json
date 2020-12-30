@@ -32,6 +32,11 @@
                  "name":"getBadge",
                  "type":"string",
                  "value":"gaoFSPjAwmPlr7COMkpQYvYdVlwI78ioIbZoHpLFfF1sgfslK0 "
+                }, 
+                {
+                 "name":"openWebsite",
+                 "type":"string",
+                 "value":"https:\/\/chaotikum.org\/assets\/badgeFish.html"
                 }],
          "type":"tilelayer",
          "visible":true,

@@ -38,6 +38,11 @@
                  "name":"getBadge",
                  "type":"string",
                  "value":"KJrLyvdrxw7z4OYGt2gNNrERYxSMEECYD9jdg0eKopuduwvbqE"
+                }, 
+                {
+                 "name":"openWebsite",
+                 "type":"string",
+                 "value":"https:\/\/chaotikum.org\/assets\/badgeBein.html"
                 }],
          "type":"tilelayer",
          "visible":true,
