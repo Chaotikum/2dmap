@@ -125,6 +125,11 @@
                  "value":"POywxU1bLmLbW9cutTsekveIhsAEyfECs7YytTDKh5AOxcVRmE "
                 }, 
                 {
+                 "name":"openWebsite",
+                 "type":"string",
+                 "value":"https:\/\/chaotikum.org\/assets\/badgeBit.html"
+                }, 
+                {
                  "name":"playAudio",
                  "type":"string",
                  "value":"..\/rick\/8_bit_rick.mp3"
