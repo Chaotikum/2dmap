@@ -96,7 +96,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":"\/_\/global\/raw.githubusercontent.com\/patzi\/rc3-tp-assembly-world\/master\/r2r-tp\/main.json"
+                 "value":"\/_\/global\/raw.githubusercontent.com\/patzi\/rc3-tp-assembly-world\/master\/r2r-tp\/main.json#startChaotikum"
                 }],
          "type":"tilelayer",
          "visible":true,
